@@ -20,4 +20,3 @@ for col_name in list(['MonthlyCharges','TotalCharges']):
 	df_load[col_name].fillna(median,inplace=True)
 print('\nJumlah Missing Values setelah di imputer datanya, adalah:')
 print(df_load.isnull().sum().sort_values(ascending=False))
-    #write your command here
